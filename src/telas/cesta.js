@@ -1,5 +1,5 @@
 import React from 'react'
-import {StyleSheet, Image, Dimensions, Text} from 'react-native'
+import {StyleSheet, Image, Dimensions, Text, View} from 'react-native'
 
 import topo from '../../assets/topo.png';
 
@@ -9,6 +9,17 @@ export default function Cesta() {
     return <>
     <Image source={topo} style={estilos.topo}/>
     <Text style={estilos.titulo}>Detalhes de cesta</Text>
+    
+    <View>
+        <Text style={estilos.nome}>Cesta de Verduras</Text>
+        <Text>Jenny Jack Farm</Text>
+        <Text>
+            Uma cesta com produtos selecionados
+            cuidadosamente da fazenda direto para
+            sua cozinha
+        </Text>
+        <Text>R$ 40,00</Text>
+    </View>
     </>
 }
 
@@ -27,6 +38,12 @@ const estilos = StyleSheet.create({
         color: "white",
         fontWeight: "bold",
         padding: 16
+    },
+    nome: {
+        color: "#464646",
+        fontSize: 26,
+        lineHeight: 42,
+        fontWeight: "bold",
     }
 
 })
