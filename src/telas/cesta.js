@@ -1,6 +1,8 @@
 import React from 'react'
 import {StyleSheet, Image, Dimensions, Text, View} from 'react-native'
 
+import Texto from '../componentes/Texto';
+
 import topo from '../../assets/topo.png';
 import logo from '../../assets/logo.png';
 
@@ -17,11 +19,11 @@ export default function Cesta() {
         <Image source={logo} style={estilos.imagemFazenda} />
         <Text style={estilos.nomeFazenda}>Jenny Jack Farm</Text>
         </View>
-        <Text style={estilos.descricao}>
+        <Texto style={estilos.descricao}>
             Uma cesta com produtos selecionados
             cuidadosamente da fazenda direto para
             sua cozinha
-        </Text>
+        </Texto>
         <Text style={estilos.preco}>R$ 40,00</Text>
     </View>
     </>
@@ -51,7 +53,7 @@ const estilos = StyleSheet.create({
         color: "#464646",
         fontSize: 26,
         lineHeight: 42,
-        fontWeight: "bold",
+        fontFamily: "MontserratBold",
     },
     fazenda:{
         flexDirection: "row",
@@ -65,6 +67,7 @@ const estilos = StyleSheet.create({
         fontSize: 16,
         lineHeight: 26,
         marginLeft: 12,
+        fontFamily: "MontserratRegular",
     },
     descricao: {
         color: "#A3A3A3",
