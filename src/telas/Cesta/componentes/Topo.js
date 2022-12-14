@@ -1,5 +1,4 @@
 import React from "react";
-import { Dimensions } from "react-native";
 import { Image, StyleSheet, Dimensions } from 'react-native'
 
 import Texto from '../../../componentes/Texto';

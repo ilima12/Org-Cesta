@@ -1,8 +1,8 @@
 import React from 'react'
-import {StyleSheet, Image, Dimensions, Text, View} from 'react-native'
+import {StyleSheet, Image, Dimensions,  View} from 'react-native'
 
 import Texto from '../../componentes/Texto';
-import Topo from '../componentes/Topo';
+import Topo from './componentes/Topo';
 
 import logo from '../../../assets/logo.png';
 
