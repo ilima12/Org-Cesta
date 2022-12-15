@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Image, StyleSheet} from 'react-native';
 
 import Texto from '../../../componentes/Texto';
-import logo from '../../../../assets/logo.png';
+
 
 export default function Detalhes() {
     return <>
